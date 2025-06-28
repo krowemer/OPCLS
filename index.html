@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Class Siswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar Section -->
+    <nav>
+        <div class="navbar-container">
+            <h3 class="navbar-title">Gearaune</h3>
+            <ul class="navbar-list">
+                <li class="menu-list">
+                    <a href="" class="menu-link">About</a>
+                </li>
+                <li class="menu-list">
+                    <a href="" class="menu-link">Skill</a>
+                </li>
+                <li class="menu-list">
+                    <a href="" class="menu-link">Project</a>
+                </li>
+            </ul>
+            <div class="social-media-list">
+                <!-- Facebook -->
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Twitter / X -->
+                <a href="https://x.com" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- YouTube -->
+                <a href="https://youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h4 class="hero-welcome">
+                    <span class="emote-title">
+                        ✌️
+                    </span>
+                    <span class="title">
+                        Halo!
+                    </span>
+                </h4>
+                <div class="hero-text-content">
+                    <h4 class="hero-title">
+                        Kenalin, namaku Dakota
+                    </h4>
+                    <h3 class="hero-job-desc">
+                        Aku seorang
+                        <div class="job-title">Game Designer </div>
+                    </h3>
+                    <p class="hero-paragraph">Melalui website portofolio ini, aku ingin membagikan beberapa pengalaman & project yang sudah pernah aku kerjakan</p>
+                </div>
+                <div class="hero-content-img">
+                    <img src="./src/img/image.png" alt="fotonya disini say">
+                </div>
+                <button type="button" class="btn-hero">
+                    <span class="btn-emote-title">📩</span>
+                    Contact Me
+                </button>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section class="about-section">
+            <div class="about-container">
+                <h4 class="about-title">About</h4>
+                <p class="about-desc">
+                    Halo saya Dakota. Saya merupakan seorang siswa SMK Budi Luhur dengan jurusan RPL. Sybau ingin jadi seorang game designer. nama bapak teman saya <b>EDWIN</b>
+                </p>
+            </div>
+        </section>
+
+        <!-- Skill Section -->
+        <section class="skill-section">   
+            <div class="skill-container">
+                <h4 class="skill-title">Skills</h4>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-python"></i>
+                <i class="fab fa-php"></i>
+                <i class="fab fa-unity"></i>
+            </div>
+        </section>
+        &nbsp;  
+        <!-- project section -->
+        <section class="project-section">
+            <div class="project-container">
+                <div class="card-content">
+                    <h5 class="card-title">Ci4 Web</h5>
+                    <p class="card-desc">Website manajemen kapal menggunakan CI4</p>
+                </div>
+                &nbsp;
+                <div class="card-content">
+                    <h5 class="card-title">Game</h5>
+                    <p class="card-desc">Game berbasis tradisi indonesia</p>
+                </div>
+                &nbsp;
+                <div class="card-content">
+                    <h5 class="card-title">Writing</h5>
+                    <p class="card-desc">Penulisan cerpen</p>
+                </div>
+            </div>
+        </section>
+        &nbsp;
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contactUs-content">
+                    <h5 class="contactUs-title">Contact Me</h5>
+                    <p class="contactUs-desc">
+                    <span class="email">
+                        deikun@zeon.com
+                    </span>
+                    <span class="nohp">
+                        153646584
+                    </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+&nbsp;
+
+    <!-- footer section -->
+    <footer>
+        🚀 Gearaune &copy; 2025
+    </footer>
+    <script>
+        <!-- masukan script disini -->
+        const titleJob = ['Game Designer', 'Web Developer'];
+        const jobdesk = document.getElementsByClassName('job-title')[0];
+        let index = 0;
+
+        setInterval(() => {
+            jobdesk.textContent = titleJob[index];
+            index = (index + 1) % titleJob.length;
+        }, 1500)
+
+        const navbar = document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 1){
+                navbar.classList.add('active');
+            } else {
+                navbar.classList.remove('active');
+            }   
+        })
+    </script>
+</body>
+</html>
